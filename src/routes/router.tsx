@@ -3,6 +3,7 @@ import App from "../App";
 import About from "../pages/About.tsx";
 import BankMain from "../pages/BankMain.tsx";
 import Welcome from "../pages/Welcome.tsx";
+import AccountDetail from "../pages/AccountDetail.tsx";
 
 const router = createBrowserRouter([
     {
@@ -12,6 +13,7 @@ const router = createBrowserRouter([
             { index: true, element: <BankMain /> },
             { path: "about", element: <About /> },
             { path: "welcome", element: <Welcome /> },
+            { path: "account/:id", element: <AccountDetail /> },
         ],
     },
 ]);
